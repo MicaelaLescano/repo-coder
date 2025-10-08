@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS (debe ir después para que tus estilos tengan prioridad) -->
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Refrigeración Lescano</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <!-- Logo -->
+                 <a class="navbar-brand logo-area" href="index.html">
+                    <img src="../medios/logoConNombrePNG.png" alt="Refrigeración Lescano logo" class="logo-navbar">
+                </a>
+
+            <!-- Botón hamburguesa (para celulares) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ventas</h1>
+        <p>Conoce todos nuestros productos disponibles</p>
+
+        <section>
+            <h2>Imágenes de Productos</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../medios/aireacondicionado.webp" class="d-block w-100" alt="Aire acondicionado BGH">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/cañodecobre.jpg" class="d-block w-100" alt="Caño de cobre">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/r410.jpg" class="d-block w-100" alt="Gas r410">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/cable.jpg" class="d-block w-100" alt="Cable">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/display.png" class="d-block w-100" alt="Display">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/mangueracristal.webp" class="d-block w-100" alt="Manguera cristal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/mensula.webp" class="d-block w-100" alt="Mensula">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/bombaDeVacio.jpeg" alt="Bomba de vacio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../medios/garrafaDescartableMap.jpg" alt="garrafa Descartable Map">
+
+                    </div>
+                </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            </div>
+
+        </section>
+        <section>
+            <div class="listaDeProductos">
+            <h2>Lista de productos</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aire tipo Split
+                        <span class="badge badge-primary badge-pill">5 variedades</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Mini Split
+                        <span class="badge badge-primary badge-pill">3 variedades</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aire portátil
+                        <span class="badge badge-primary badge-pill">2 variedades</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aire tipo ventana
+                        <span class="badge badge-primary badge-pill">1 variedad</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aire central (por conductos)
+                        <span class="badge badge-primary badge-pill">1 solución</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Aires inverter
+                        <span class="badge badge-primary badge-pill">4 modelos</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Multisplit
+                        <span class="badge badge-primary badge-pill">2 sistemas</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cassette
+                        <span class="badge badge-primary badge-pill">1 tipo</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+            
+        <section class="mt-5">
+            <h2>Tabla de disponibilidad de productos</h2>
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="table-light">
+                <tr>
+                    <th>Producto</th>
+                    <th>Está en stock</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Aire acondicionado BGH 3000W</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Gas refrigerante R410A</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Caño de cobre 1/4"</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Bomba de vacío profesional</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Placa de control electrónico universal</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Mensula metálica reforzada</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Manguera de alta presión</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Display digital para split</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Cable IRAM 2x1mm</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Garrafa Descartable MAP PRO 400gr</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Filtro de cobre 5 gr BlueStar</td>
+                    <td>Sí</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <nav class="menu-interno">
+            <ul>
+                <li><a href="../index.html">Volver al inicio</a></li>
+                <li><a href="#top">Volver arriba</a></li>
+            </ul>
+        </nav>
+
+
+    </main>
+
+    <footer>
+    </footer>
+    <!-- Bootstrap JS (necesario para que el carrusel se mueva) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

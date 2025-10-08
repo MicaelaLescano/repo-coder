@@ -1,0 +1,317 @@
+/* ===================================
+   ESTILOS GENERALES
+=================================== */
+body {
+  background-color: #fdfcfb;
+  font-family: "Sansita", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #264653;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+h2 {
+  color: #2a9d8f;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.4em;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2a9d8f;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* ===================================
+   NAVBAR PERSONALIZADA (BOOTSTRAP)
+=================================== */
+.navbar {
+  background-color: #f4a261; /* Naranja suave */
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fondo blanco solo detrás del logo */
+.logo-area {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.logo-navbar {
+  max-width: 90px;
+  height: auto;
+}
+
+/* Links del menú */
+.navbar-nav .nav-link {
+  color: #1f1f1f;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 15px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===================================
+   MENÚ INTERNO
+=================================== */
+.menu-interno {
+  font-size: 1.3em;
+  background: #f4a261;
+  padding: 15px 40px;
+  margin-top: 120px;
+}
+
+.menu-interno ul {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.menu-interno a {
+  color: #1f1f1f;
+}
+
+.menu-interno a:hover {
+  color: white;
+}
+
+/* ===================================
+   INDEX (Página principal)
+=================================== */
+.items-accesibilidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  text-align: center;
+  gap: 20px;
+}
+
+.items-accesibilidad img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.items-accesibilidad p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* ===================================
+   GARANTÍA
+=================================== */
+.contenedor-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo-ventas titulo-ventas"
+    "texto1 texto1"
+    "contactanos contactanos"
+    "imagen-bgh datos-bgh"
+    "textos-tecnicos textos-tecnicos"
+    "imagen-whats tecnicos";
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.titulo-ventas   { grid-area: titulo-ventas; }
+.texto1          { grid-area: texto1; font-size: 1.5em; }
+.contactanos     { grid-area: contactanos; font-size: 1.8em; }
+.imagen-bgh      { grid-area: imagen-bgh; }
+.datos-bgh       { grid-area: datos-bgh; font-size: 1.3em; }
+.textos-tecnicos { grid-area: textos-tecnicos; font-size: 1.8em; }
+.imagen-whats    { grid-area: imagen-whats; text-align: center; }
+.tecnicos        { grid-area: tecnicos; font-size: 1.3em; }
+
+/* ===================================
+   CONTACTO
+=================================== */
+.contacto-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo-ventas titulo-ventas"
+    "texto1 texto1"
+    "contactanos imagen-maps"
+    "texto-icono1 texto-icono1"
+    "imagen-whats texto-tecnicos"
+    "texto-icono2 texto-icono2";
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.titulo1        { grid-area: titulo-ventas; }
+.texto          { grid-area: texto1; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
+.contactanos1   { grid-area: contactanos; }
+.imagen-maps    { grid-area: imagen-maps; text-align: center; }
+.texto-icono1   { grid-area: texto-icono1; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
+.imagen-whats1  { grid-area: imagen-whats; text-align: center; }
+.textos-tecnicos { grid-area: textos-tecnicos; }
+.texto-icono2   { grid-area: texto-icono2; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
+
+/* ===================================
+   FOOTER
+=================================== */
+footer {
+  background-image: url("./medios/encabezado.png");
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ===================================
+   CAROUSEL
+=================================== */
+.carousel {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+/* ===================================
+   LISTAS Y BADGES
+=================================== */
+.list-group {
+  margin: 20px;
+}
+
+.list-group-item {
+  font-size: 1.1em;
+}
+
+.badge {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion nav {
+    gap: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navegacion nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .items-accesibilidad {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo-ventas"
+      "texto1"
+      "contactanos"
+      "imagen-maps"
+      "texto-icono1"
+      "imagen-whats"
+      "texto-tecnicos"
+      "texto-icono2";
+    gap: 20px;
+  }
+
+  .menu-interno ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
