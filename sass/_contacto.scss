@@ -1,0 +1,71 @@
+/* ===================================
+   CONTACTO
+=================================== */
+.contacto-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo-ventas titulo-ventas"
+    "texto1 texto1"
+    "contactanos imagen-maps"
+    "texto-icono1 texto-icono1"
+    "imagen-whats texto-tecnicos"
+    "texto-icono2 texto-icono2";
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.titulo1 { grid-area: titulo-ventas; }
+.texto { 
+  grid-area: texto1; 
+  font-size: 1.3em; 
+  background-color: #f7f9fa; 
+  border-left: 4px solid #2a9d8f; 
+  padding: 10px; 
+}
+.contactanos1 { grid-area: contactanos; }
+.imagen-maps { 
+  grid-area: imagen-maps; 
+  text-align: center; 
+}
+
+.imagen-maps img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.imagen-maps img:hover {
+  transform: scale(1.5);
+}
+
+.texto-icono1 { 
+  grid-area: texto-icono1; 
+  font-size: 1.3em; 
+  background-color: #f7f9fa; 
+  border-left: 4px solid #2a9d8f; 
+  padding: 10px; 
+}
+
+.imagen-whats1 { 
+  grid-area: imagen-whats; 
+  text-align: center; 
+}
+
+.imagen-whats1 img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen-whats1 img:hover {
+  transform: scale(1.2);
+}
+
+.textos-tecnicos { grid-area: textos-tecnicos; }
+.texto-icono2 { 
+  grid-area: texto-icono2; 
+  font-size: 1.3em; 
+  background-color: #f7f9fa; 
+  border-left: 4px solid #2a9d8f; 
+  padding: 10px; 
+}

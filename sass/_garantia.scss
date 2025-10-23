@@ -1,0 +1,46 @@
+/* ===================================
+   GARANTÍA
+=================================== */
+.contenedor-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo-ventas titulo-ventas"
+    "texto1 texto1"
+    "contactanos contactanos"
+    "imagen-bgh datos-bgh"
+    "textos-tecnicos textos-tecnicos"
+    "imagen-whats tecnicos";
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.titulo-ventas { grid-area: titulo-ventas; }
+.texto1 { grid-area: texto1; font-size: 1.5em; }
+.contactanos { grid-area: contactanos; font-size: 1.8em; }
+.imagen-bgh { grid-area: imagen-bgh; text-align: center; }
+
+.imagen-bgh img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen-bgh img:hover {
+  transform: scale(1.2);
+}
+
+.datos-bgh { grid-area: datos-bgh; font-size: 1.3em; }
+.textos-tecnicos { grid-area: textos-tecnicos; font-size: 1.8em; }
+.imagen-whats { grid-area: imagen-whats; text-align: center; }
+
+.imagen-whats img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.imagen-whats img:hover {
+  transform: scale(1.9);
+}
+
+.tecnicos { grid-area: tecnicos; font-size: 1.3em; }

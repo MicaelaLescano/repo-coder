@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================================
    ESTILOS GENERALES
 =================================== */
@@ -66,7 +67,7 @@ header {
    NAVBAR PERSONALIZADA (BOOTSTRAP)
 =================================== */
 .navbar {
-  background-color: #f4a261; /* Naranja suave */
+  background-color: #f4a261;
   width: 100%;
   padding: 10px 0;
   margin: 0;
@@ -84,9 +85,28 @@ header {
   border-radius: 5px;
 }
 
+/* Logo dentro del navbar */
 .logo-navbar {
   max-width: 90px;
   height: auto;
+  transition: transform 0.3s ease; /* transición suave */
+}
+
+/* Efecto al pasar el mouse */
+.logo-navbar:hover {
+  transform: scale(1.1); /* agranda el logo */
+}
+
+/* Logo del encabezado principal (si lo usás fuera del navbar) */
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 /* Links del menú */
@@ -153,6 +173,11 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
+  transition: transform 0.2s ease; /* transición suave */
+}
+
+.items-accesibilidad img:hover {
+  transform: scale(1.7); /* agranda la imagen al pasar el cursor */
 }
 
 .items-accesibilidad p {
@@ -165,60 +190,143 @@ header {
 =================================== */
 .contenedor-grid {
   display: grid;
-  grid-template-areas:
-    "titulo-ventas titulo-ventas"
-    "texto1 texto1"
-    "contactanos contactanos"
-    "imagen-bgh datos-bgh"
-    "textos-tecnicos textos-tecnicos"
-    "imagen-whats tecnicos";
+  grid-template-areas: "titulo-ventas titulo-ventas" "texto1 texto1" "contactanos contactanos" "imagen-bgh datos-bgh" "textos-tecnicos textos-tecnicos" "imagen-whats tecnicos";
   grid-template-columns: 1fr 2fr;
   gap: 40px;
 }
 
-.titulo-ventas   { grid-area: titulo-ventas; }
-.texto1          { grid-area: texto1; font-size: 1.5em; }
-.contactanos     { grid-area: contactanos; font-size: 1.8em; }
-.imagen-bgh      { grid-area: imagen-bgh; }
-.datos-bgh       { grid-area: datos-bgh; font-size: 1.3em; }
-.textos-tecnicos { grid-area: textos-tecnicos; font-size: 1.8em; }
-.imagen-whats    { grid-area: imagen-whats; text-align: center; }
-.tecnicos        { grid-area: tecnicos; font-size: 1.3em; }
+.titulo-ventas {
+  grid-area: titulo-ventas;
+}
+
+.texto1 {
+  grid-area: texto1;
+  font-size: 1.5em;
+}
+
+.contactanos {
+  grid-area: contactanos;
+  font-size: 1.8em;
+}
+
+.imagen-bgh {
+  grid-area: imagen-bgh;
+  text-align: center;
+}
+
+.imagen-bgh img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen-bgh img:hover {
+  transform: scale(1.2);
+}
+
+.datos-bgh {
+  grid-area: datos-bgh;
+  font-size: 1.3em;
+}
+
+.textos-tecnicos {
+  grid-area: textos-tecnicos;
+  font-size: 1.8em;
+}
+
+.imagen-whats {
+  grid-area: imagen-whats;
+  text-align: center;
+}
+
+.imagen-whats img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.imagen-whats img:hover {
+  transform: scale(1.9);
+}
+
+.tecnicos {
+  grid-area: tecnicos;
+  font-size: 1.3em;
+}
 
 /* ===================================
    CONTACTO
 =================================== */
 .contacto-grid {
   display: grid;
-  grid-template-areas:
-    "titulo-ventas titulo-ventas"
-    "texto1 texto1"
-    "contactanos imagen-maps"
-    "texto-icono1 texto-icono1"
-    "imagen-whats texto-tecnicos"
-    "texto-icono2 texto-icono2";
+  grid-template-areas: "titulo-ventas titulo-ventas" "texto1 texto1" "contactanos imagen-maps" "texto-icono1 texto-icono1" "imagen-whats texto-tecnicos" "texto-icono2 texto-icono2";
   grid-template-columns: 1fr 2fr;
   gap: 30px;
 }
 
-.titulo1        { grid-area: titulo-ventas; }
-.texto          { grid-area: texto1; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
-.contactanos1   { grid-area: contactanos; }
-.imagen-maps    { grid-area: imagen-maps; text-align: center; }
-.texto-icono1   { grid-area: texto-icono1; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
-.imagen-whats1  { grid-area: imagen-whats; text-align: center; }
-.textos-tecnicos { grid-area: textos-tecnicos; }
-.texto-icono2   { grid-area: texto-icono2; font-size: 1.3em; background-color: #f7f9fa; border-left: 4px solid #2a9d8f; padding: 10px; }
+.titulo1 {
+  grid-area: titulo-ventas;
+}
 
-/* ===================================
-   FOOTER
-=================================== */
-footer {
-  background-image: url("./medios/encabezado.png");
-  background-size: cover;
-  background-position: center;
-  height: 100px;
+.texto {
+  grid-area: texto1;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid #2a9d8f;
+  padding: 10px;
+}
+
+.contactanos1 {
+  grid-area: contactanos;
+}
+
+.imagen-maps {
+  grid-area: imagen-maps;
   text-align: center;
+}
+
+.imagen-maps img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.imagen-maps img:hover {
+  transform: scale(1.5);
+}
+
+.texto-icono1 {
+  grid-area: texto-icono1;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid #2a9d8f;
+  padding: 10px;
+}
+
+.imagen-whats1 {
+  grid-area: imagen-whats;
+  text-align: center;
+}
+
+.imagen-whats1 img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen-whats1 img:hover {
+  transform: scale(1.2);
+}
+
+.textos-tecnicos {
+  grid-area: textos-tecnicos;
+}
+
+.texto-icono2 {
+  grid-area: texto-icono2;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid #2a9d8f;
   padding: 10px;
 }
 
@@ -259,6 +367,62 @@ footer {
 }
 
 /* ===================================
+   FOOTER
+=================================== */
+footer {
+  background-image: url("../medios/encabezado.png");
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #264653;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.15);
+}
+
+.footer-text-link {
+  color: #f4a261;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===================================
    RESPONSIVE
 =================================== */
 @media (max-width: 1024px) {
@@ -266,52 +430,39 @@ footer {
     font-size: 15px;
     padding: 0 10px;
   }
-
   header {
     flex-direction: column;
     align-items: center;
   }
-
   .navegacion nav {
     gap: 40px;
   }
-
   img {
     max-width: 100%;
     height: auto;
   }
 }
-
 @media (max-width: 768px) {
   .navegacion nav {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-
   .items-accesibilidad {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-
   .contacto-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "titulo-ventas"
-      "texto1"
-      "contactanos"
-      "imagen-maps"
-      "texto-icono1"
-      "imagen-whats"
-      "texto-tecnicos"
-      "texto-icono2";
+    grid-template-areas: "titulo-ventas" "texto1" "contactanos" "imagen-maps" "texto-icono1" "imagen-whats" "texto-tecnicos" "texto-icono2";
     gap: 20px;
   }
-
   .menu-interno ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

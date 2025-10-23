@@ -1,0 +1,68 @@
+/* ===================================
+   NAVBAR PERSONALIZADA (BOOTSTRAP)
+=================================== */
+.navbar {
+  background-color: #f4a261;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fondo blanco solo detrás del logo */
+.logo-area {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Logo dentro del navbar */
+.logo-navbar {
+  max-width: 90px;
+  height: auto;
+  transition: transform 0.3s ease; /* transición suave */
+}
+
+/* Efecto al pasar el mouse */
+.logo-navbar:hover {
+  transform: scale(1.1); /* agranda el logo */
+}
+
+/* Logo del encabezado principal (si lo usás fuera del navbar) */
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Links del menú */
+.navbar-nav .nav-link {
+  color: #1f1f1f;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 15px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

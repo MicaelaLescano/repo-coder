@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Tus estilos -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,26 +19,27 @@
         rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <!-- Logo -->
-                 <a class="navbar-brand logo-area" href="index.html">
-                    <img src="../medios/logoConNombrePNG.png" alt="Refrigeración Lescano logo" class="logo-navbar">
-                </a>
+        <div class="container-fluid">
+            <a class="navbar-brand logo-area" href="../index.html">
+                <img src="../medios/logoConNombrePNG.png" alt="Refrigeración Lescano" class="logo-navbar">
+            </a>
 
-            <!-- Botón hamburguesa (para celulares) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Menú -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/ventas.html">Ventas</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/garantia.html">Garantía</a></li>
+            </ul>
             </div>
+        </div>
         </nav>
     </header>
 
@@ -86,7 +87,11 @@
             </nav>
 
     </main>
-    <footer>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Refrigeración Lescano - Todos los derechos reservados</p>
+        </div>
     </footer>
 </body>
 </html>

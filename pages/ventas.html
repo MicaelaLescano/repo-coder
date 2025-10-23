@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
@@ -13,31 +12,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Tu CSS (debe ir después para que tus estilos tengan prioridad) -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <title>Refrigeración Lescano</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <!-- Logo -->
-                 <a class="navbar-brand logo-area" href="index.html">
-                    <img src="../medios/logoConNombrePNG.png" alt="Refrigeración Lescano logo" class="logo-navbar">
-                </a>
+        <div class="container-fluid">
+            <a class="navbar-brand logo-area" href="../index.html">
+                <img src="../medios/logoConNombrePNG.png" alt="Refrigeración Lescano" class="logo-navbar">
+            </a>
 
-            <!-- Botón hamburguesa (para celulares) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <!-- Menú -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/garantia.html">Garantía</a></li>
+            </ul>
             </div>
+        </div>
         </nav>
     </header>
 
@@ -71,10 +72,10 @@
                         <img src="../medios/mensula.webp" class="d-block w-100" alt="Mensula">
                     </div>
                     <div class="carousel-item">
-                        <img src="../medios/bombaDeVacio.jpeg" alt="Bomba de vacio">
+                        <img src="../medios/bombaDeVacio.jpeg" class="d-block w-100" alt="Bomba de vacio">
                     </div>
                     <div class="carousel-item">
-                        <img src="../medios/garrafaDescartableMap.jpg" alt="garrafa Descartable Map">
+                        <img src="../medios/garrafaDescartableMap.jpg" class="d-block w-100" alt="garrafa Descartable Map">
 
                     </div>
                 </div>
@@ -199,7 +200,11 @@
 
     </main>
 
-    <footer>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Refrigeración Lescano - Todos los derechos reservados</p>
+        </div>
     </footer>
     <!-- Bootstrap JS (necesario para que el carrusel se mueva) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

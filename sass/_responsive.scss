@@ -1,0 +1,57 @@
+/* ===================================
+   RESPONSIVE
+=================================== */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion nav {
+    gap: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navegacion nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .items-accesibilidad {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo-ventas"
+      "texto1"
+      "contactanos"
+      "imagen-maps"
+      "texto-icono1"
+      "imagen-whats"
+      "texto-tecnicos"
+      "texto-icono2";
+    gap: 20px;
+  }
+
+  .menu-interno ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
