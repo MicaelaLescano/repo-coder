@@ -1,7 +1,4 @@
-/* ===================================
-   LISTA DE DISPONIBILIDAD - ANIMACIÓN
-=================================== */
-
+/* LISTA DE DISPONIBILIDAD - ANIMACIÓN*/
 .items-accesibilidad {
   display: flex;
   flex-wrap: wrap;
@@ -9,21 +6,21 @@
   margin-top: 40px;
   text-align: center;
   gap: 20px;
-}
 
-.items-accesibilidad img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease; /* suaviza la animación */
-}
+  img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform $transition-media;
+  }
 
-.items-accesibilidad img:hover {
-  transform: scale(1.15); /* agranda al pasar el cursor */
-}
+  img:hover {
+    transform: scale(1.15);
+  }
 
-.items-accesibilidad p {
-  margin-top: 10px;
-  font-size: 1.1em;
+  p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
 }

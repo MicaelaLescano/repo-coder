@@ -1,6 +1,4 @@
-/* ===================================
-   INDEX (Página principal)
-=================================== */
+/* INDEX (Página principal) */
 .items-accesibilidad {
   display: flex;
   flex-wrap: wrap;
@@ -8,21 +6,21 @@
   margin-top: 40px;
   text-align: center;
   gap: 20px;
-}
 
-.items-accesibilidad img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s ease; /* transición suave */
-}
+  img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform $transition-rapida;
+  }
 
-.items-accesibilidad img:hover {
-  transform: scale(1.7); /* agranda la imagen al pasar el cursor */
-}
+  img:hover {
+    transform: scale(1.7);
+  }
 
-.items-accesibilidad p {
-  margin-top: 10px;
-  font-size: 1.1em;
+  p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
 }

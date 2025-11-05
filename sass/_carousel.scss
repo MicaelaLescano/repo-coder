@@ -1,19 +1,17 @@
-/* ===================================
-   CAROUSEL
-=================================== */
+/* CAROUSEL*/
 .carousel {
   max-width: 800px;
   margin: 40px auto;
-}
 
-.carousel img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
 }

@@ -1,6 +1,4 @@
-/* ===================================
-   GARANTÍA
-=================================== */
+/* GARANTÍA*/
 .contenedor-grid {
   display: grid;
   grid-template-areas:
@@ -14,33 +12,61 @@
   gap: 40px;
 }
 
-.titulo-ventas { grid-area: titulo-ventas; }
-.texto1 { grid-area: texto1; font-size: 1.5em; }
-.contactanos { grid-area: contactanos; font-size: 1.8em; }
-.imagen-bgh { grid-area: imagen-bgh; text-align: center; }
-
-.imagen-bgh img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+.titulo-ventas {
+  grid-area: titulo-ventas;
 }
 
-.imagen-bgh img:hover {
-  transform: scale(1.2);
+.texto1 {
+  grid-area: texto1;
+  font-size: 1.5em;
 }
 
-.datos-bgh { grid-area: datos-bgh; font-size: 1.3em; }
-.textos-tecnicos { grid-area: textos-tecnicos; font-size: 1.8em; }
-.imagen-whats { grid-area: imagen-whats; text-align: center; }
-
-.imagen-whats img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.2s ease;
+.contactanos {
+  grid-area: contactanos;
+  font-size: 1.8em;
 }
 
-.imagen-whats img:hover {
-  transform: scale(1.9);
+.imagen-bgh {
+  grid-area: imagen-bgh;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform $transition-media;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
-.tecnicos { grid-area: tecnicos; font-size: 1.3em; }
+.datos-bgh {
+  grid-area: datos-bgh;
+  font-size: 1.3em;
+}
+
+.textos-tecnicos {
+  grid-area: textos-tecnicos;
+  font-size: 1.8em;
+}
+
+.imagen-whats {
+  grid-area: imagen-whats;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform $transition-rapida;
+
+    &:hover {
+      transform: scale(1.9);
+    }
+  }
+}
+
+.tecnicos {
+  grid-area: tecnicos;
+  font-size: 1.3em;
+}

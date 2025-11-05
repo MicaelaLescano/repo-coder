@@ -2,23 +2,23 @@
    ESTILOS GENERALES
 =================================== */
 body {
-  background-color: #fdfcfb;
-  font-family: "Sansita", sans-serif;
+  background-color: $color-fondo;
+  font-family: $font-principal;
   font-size: 16px;
-  color: #333;
+  color: $color-texto;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: #264653;
+  color: $color-principal;
   text-align: center;
   font-size: 1.9em;
   font-weight: 700;
 }
 
 h2 {
-  color: #2a9d8f;
+  color: $color-secundario;
   font-size: 1.8em;
   text-align: center;
   font-weight: 600;
@@ -27,7 +27,7 @@ h2 {
 p {
   font-size: 1.4em;
   text-align: center;
-  color: #4a4a4a;
+  color: $color-texto-suave;
 }
 
 ul {
@@ -38,11 +38,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: #1f1f1f;
+  color: $color-texto-oscuro;
   font-weight: bold;
-  transition: color 0.3s ease;
-}
+  transition: color $transition-media;
 
-a:hover {
-  color: #2a9d8f;
+  &:hover {
+    color: $color-secundario;
+  }
 }

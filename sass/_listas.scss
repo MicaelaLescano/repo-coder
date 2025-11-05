@@ -1,15 +1,13 @@
-/* ===================================
-   LISTAS Y BADGES
-=================================== */
+/* LISTAS Y BADGES*/
 .list-group {
   margin: 20px;
-}
 
-.list-group-item {
-  font-size: 1.1em;
+  .list-group-item {
+    font-size: 1.1em;
+  }
 }
 
 .badge {
-  background-color: #2a9d8f;
+  background-color: $color-badge;
   color: white;
 }

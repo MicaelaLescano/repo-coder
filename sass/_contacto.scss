@@ -1,6 +1,4 @@
-/* ===================================
-   CONTACTO
-=================================== */
+/* CONTACTO*/
 .contacto-grid {
   display: grid;
   grid-template-areas:
@@ -14,58 +12,68 @@
   gap: 30px;
 }
 
-.titulo1 { grid-area: titulo-ventas; }
-.texto { 
-  grid-area: texto1; 
-  font-size: 1.3em; 
-  background-color: #f7f9fa; 
-  border-left: 4px solid #2a9d8f; 
-  padding: 10px; 
-}
-.contactanos1 { grid-area: contactanos; }
-.imagen-maps { 
-  grid-area: imagen-maps; 
-  text-align: center; 
+.titulo1 {
+  grid-area: titulo-ventas;
 }
 
-.imagen-maps img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.2s ease;
+.texto {
+  grid-area: texto1;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid $color-secundario;
+  padding: 10px;
 }
 
-.imagen-maps img:hover {
-  transform: scale(1.5);
+.contactanos1 {
+  grid-area: contactanos;
 }
 
-.texto-icono1 { 
-  grid-area: texto-icono1; 
-  font-size: 1.3em; 
-  background-color: #f7f9fa; 
-  border-left: 4px solid #2a9d8f; 
-  padding: 10px; 
+.imagen-maps {
+  grid-area: imagen-maps;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform $transition-rapida;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
 }
 
-.imagen-whats1 { 
-  grid-area: imagen-whats; 
-  text-align: center; 
+.texto-icono1 {
+  grid-area: texto-icono1;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid $color-secundario;
+  padding: 10px;
 }
 
-.imagen-whats1 img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+.imagen-whats1 {
+  grid-area: imagen-whats;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform $transition-media;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
-.imagen-whats1 img:hover {
-  transform: scale(1.2);
+.textos-tecnicos {
+  grid-area: textos-tecnicos;
 }
 
-.textos-tecnicos { grid-area: textos-tecnicos; }
-.texto-icono2 { 
-  grid-area: texto-icono2; 
-  font-size: 1.3em; 
-  background-color: #f7f9fa; 
-  border-left: 4px solid #2a9d8f; 
-  padding: 10px; 
+.texto-icono2 {
+  grid-area: texto-icono2;
+  font-size: 1.3em;
+  background-color: #f7f9fa;
+  border-left: 4px solid $color-secundario;
+  padding: 10px;
 }
